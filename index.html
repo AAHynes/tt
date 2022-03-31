@@ -55,12 +55,31 @@
             Over the turn of the new year, I moved more into informative technology. The ability to give people the information they needed really appealed to me. It is also much less invasive than the security idea I had previously. I decided to move on with a weather sensor system, something that could be set up outside your house to be able to get the most accurate weather readings for the user. The type of weather I personally hate the most is wind, and I know a lot of people share this opinion, so I decided to go with a wind sensor. To be able to tell people if it is too windy and that they should take the necessary precautions. Especially since it can be relatively hard to judge exactly how windy it is from the inside. In order to assemble this system I wanted to make, I was going to need some parts. A motorized fan (wind detector), two microbits, two breadboards, a thingspeak, a power supply, and plenty of wires to connect it all.  
           </p>
           
+           <br/>
+           <br/>
+          
           <h2>
             Design: 
           </h2>
+          <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/IMG_4324.JPG?v=1648690516880" alt="System" width="35%" length="35%">
           <p>
-            put your report here
+            The design of my Wind Sensor System comes in two main parts, the sender, which is the part that takes the reading of the wind speed. The sender then “sends” this information to the receiver. The receiver then displays the speed of the wind and tells you whether you should wear a jacket or not. I will go into further details of each component now. 
           </p>
+          
+          <br/>
+          
+          <h3>
+            Sender
+          </h3>
+          
+          <p>
+            The sender system uses a couple of main components. The wind detector, the microbit, the breadboard and the power supply. How it works is the motor with the propellor spins anti-clockwise during some form of wind. The motor can then read the revolutions per minute and send that data to the microbit. The microbit is connected to the breadboard using the wires. The microbit then displays the revolutions per minute. Then the microbit sends the information off to the microbit that is on the receiver using radio waves. The power supply allows the whole sender to be able to function on its own using batteries. 
+          </p>
+          
+          <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/senderrrr.JPG?v=1648690485852" alt="Sender" width="35%" length="35%">
+          
+          <br/>
+          <br/>
           
           <h2>
             Implementation and Testing: 
@@ -92,11 +111,15 @@
           <p>
             One problem that I noticed at the end of my project was that the number 2 would show up on my microbit without me wanting it to. I learned that this came from issues with the grounding of my system and that the digital input defaulted to 2 instead of 0. If my system was properly grounded then the number 0 would have been the default number that showed up, which would make a lot more sense than 2. There was nothing I could do to prevent this issue unless I wanted to entirely change my system design and time constraint issues made this option very unfeasible. 
           </p>
+          
+          <br/>
+          <br/>
+          
           <h2>
             Evaluation: 
           </h2>
           <p>
-            put your report here
+            I personally think that I decently met the design requirements that were presented in the brief, although I could have expanded upon my design to include more. My multiple types of sensors that I originally wanted to use would have made a world of a difference as I would have had a lot more options to play around with when it came to functionality of my system. I could have had more outputs present, making the system have much more functionality and better purpose for the end-user. I also think that I could have made the design more user friendly if I had a better display for the microbit, as it can be hard to read the wind speed as it scrolls by on the microbit. I also could never simulate wind that well, all I could do was blow on it, I never got a sustained period of flowing air through the system. This resulted in the red LED turning off whenever the propeller stopped spinning, in practice this would not happen as the propeller would keep spinning, keeping the red LED on if the wind was over the certain threshold. If I were to do this project again, I would sort out my timekeeping early. I left a lot of my project to the last minute. I would also make sure to take as many photographs and take down as many key dates as possible so that I would be able to use them for my final write-up. 
           </p>
         </div>
       </div>

@@ -182,3 +182,20 @@ h2 {
 .dipped {
   transform: translateY(5px);
 }
+
+h3  {
+  color: #2800FF;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
