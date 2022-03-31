@@ -79,6 +79,34 @@
           <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/senderrrr.JPG?v=1648690485852" alt="Sender" width="35%" length="35%">
           
           <br/>
+          
+          <p>
+            On the coding side of things, the sender is linked to the receiver using radio set groups, the receiver has the same one, allowing them to communicate with each other. The microbit on the sender is forever taking in the reading that the wind sensor is acquiring and sending that reading across to the other microbit on the receiver. The sender also has a function to memorize its highest ever reading and displaying it if the button A is pressed, which could come in handy if anyone is interested in retaining that information. 
+          </p>
+          
+          <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/IMG_4359.JPG?v=1648690501448" alt="Sender Code" width="35%" length="35%">
+          
+          <br/>
+          
+          <h3>
+            Reciever
+          </h3>
+          <p>
+            The microbit on the receiver “receives” the information and then displays the revolutions per minute on the face of the microbit, it also denotes whether or not the wind speed is over a certain threshold with a tick. The thingspeak then records the information collected by the microbit and sends it to my website, where it is displayed on a graph when the user logs into their profile. The microbit then also dictates whether or not the LED’s should either stay green or turn red. If the LED is green, the wind speed is under the certain threshold, meaning you do not have to wear a jacket when leaving the house, but if the red LED turns on, the wind speed is over the threshold, and you should take the necessary precautions in preparing to leave the house. 
+          </p>
+          
+          <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/reciever.JPG?v=1648690492579" alt="Reciever" width="35%" length="35%">
+          
+          <br/>
+          
+          <p>
+            For the code, you can see that the radio group is the same as the sender. The receiver also has a unique function, it connects to the internet, it then uses the thingspeak to then send the received information from the sender to the website I have created and displays the information on a graph. That’s what the green blocks of code are for. When the microbit connects to the Wi-Fi, a tick is displayed. When it connects to the thingspeak, a smiley face is displayed. When the microbit receives its data, it immediately displays the number, followed by a tick if it's under the wind speed threshold, or an x if it is over the threshold. If it is over, the red LED will turn on, which you can see from the digital pin blocks.  
+          </p>
+          
+          <img src="https://cdn.glitch.global/892535e0-7be7-4ea4-9fac-c917ff7bd308/IMG_4360.JPG?v=1648690505513" alt="Reciever Code" width="35%" length="35%">
+          
+          
+          <br/>
           <br/>
           
           <h2>
@@ -121,6 +149,12 @@
           <p>
             I personally think that I decently met the design requirements that were presented in the brief, although I could have expanded upon my design to include more. My multiple types of sensors that I originally wanted to use would have made a world of a difference as I would have had a lot more options to play around with when it came to functionality of my system. I could have had more outputs present, making the system have much more functionality and better purpose for the end-user. I also think that I could have made the design more user friendly if I had a better display for the microbit, as it can be hard to read the wind speed as it scrolls by on the microbit. I also could never simulate wind that well, all I could do was blow on it, I never got a sustained period of flowing air through the system. This resulted in the red LED turning off whenever the propeller stopped spinning, in practice this would not happen as the propeller would keep spinning, keeping the red LED on if the wind was over the certain threshold. If I were to do this project again, I would sort out my timekeeping early. I left a lot of my project to the last minute. I would also make sure to take as many photographs and take down as many key dates as possible so that I would be able to use them for my final write-up. 
           </p>
+          <br/>
+          <br/>
+          
+          <h2>
+            
+          </h2>
         </div>
       </div>
     </div>
