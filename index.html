@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
 
-    <title>Hello World!</title>
+    <title>Computer Science Coursework</title>
 
     <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
@@ -45,57 +36,71 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
-
-    <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
+        <h1 class="title">Computer Science Coursework 2022 Report</h1>
 
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <!-- Instructions on using this project -->
         <div class="instructions">
           <h2>
-            Using this project
+           Investigation and Plan: 
           </h2>
           <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out README.md in the editor for
-            more info and next steps you can take!
+            As we all know, smart homes are becoming more and more commonplace in our society, we see it in machines like Amazon’s Alexa or Google Dot, which are activated by someone talking to it. We also see it in stuff like Roomba’s, which cleans your floor for you, without you having to even tell it to. All of these things are made with one main goal in mind, to be able to make living spaces more enjoyable, secure, and convenient for home owners through the use of automation to enhance a building’s functionality. I had to think about how I could make some form of impact on this market, I wanted to make something simple, something easy to understand, something that would make a small benefit to most people’s lives, without being too intrusive in their personal lives. When the brief first became available to me, roughly the 15th of December or so, I first thought about doing a form of door unlocking system, where if you had a quote on quote “key” on you, and you walked into a certain proximity of your front door, your door would unlock. I did this with assisting elderly people in mind, as they would be more likely to not have quite the same motor functionality as a young person, so the door automatically unlocking would help them massively. Especially if they had a brain disorder such as Parkinson’s disease. I eventually decided against this system as it may have been interpreted as being too invasive in a person's home, especially if my target demographic was elderly people as they tend to be apprehensive about modern technology as it is. I moved away from the idea of home security as a result of this, feeling that people may not like the feeling of a door unlocking itself. It could put people at risk. What if my technology failed in the middle of the night? Someone’s front door being left unlocked while they are asleep. I did not want to have to tackle all of the ethical problems that this type of project would inevitably create. 
           </p>
-          <!-- ADD BUTTON HERE -->
           
-          <!-- Once you've added the button from the readme, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+          <br/>
+          
+          <p>
+            Over the turn of the new year, I moved more into informative technology. The ability to give people the information they needed really appealed to me. It is also much less invasive than the security idea I had previously. I decided to move on with a weather sensor system, something that could be set up outside your house to be able to get the most accurate weather readings for the user. The type of weather I personally hate the most is wind, and I know a lot of people share this opinion, so I decided to go with a wind sensor. To be able to tell people if it is too windy and that they should take the necessary precautions. Especially since it can be relatively hard to judge exactly how windy it is from the inside. In order to assemble this system I wanted to make, I was going to need some parts. A motorized fan (wind detector), two microbits, two breadboards, a thingspeak, a power supply, and plenty of wires to connect it all.  
+          </p>
+          
+          <h2>
+            Design: 
+          </h2>
+          <p>
+            put your report here
+          </p>
+          
+          <h2>
+            Implementation and Testing: 
+          </h2>
+          <p>
+           Once I had moved away from the security lock system, I began work on my weather sensor system. Originally, I wanted the weather sensor to be able to read all sorts of different types of weather, to be able to provide the end user with as much information as possible. For the first iteration of this system, I had intentions of making the system be able to detect wind, light, and temperature. I set out with that process in mind. There were originally problems with the code itself. Many people in the same class as I coincidentally all ended up using the same radio group. No one had moved it away from the default, the default being one, and as a result of that microbits were connecting to each other that were never supposed to be connected, and my information from my sender was being sent to someone else’s receiver, and my receiver was receiving information from other people’s sender. It was overall a bit messy for a while, but it was not a hard fix, the hardest part was actually figuring out what was going wrong, after the problem was identified, it didn’t take long for everyone to get their own exclusive radio set group to work with. 
+          </p>
+          
+          <br/>
+          
+          <p>
+            The next problem I encountered was trying to send across multiple streams of information (wind, light level and temperature) from my sender to the receiver, as there was a struggle trying to figure out how I can display this information on my receiver, as the microbit has a limited display of 25 LED’s. There was very little way for me to accurately display this information. There were also problems with the microbit not reading all of the streams of information that I wanted it to, which then resulted in nothing being displayed when the receiver was called upon. As a result of this, I had to scrap the usage of two of the three sensors I originally wanted to use. Temperature and light level were now gone, and all I was left with was the one that originally sparked the idea for a weather sensor, wind. 
+          </p>
+          
+          <br/>
+          
+          <p>
+            Now that I was no longer using temperature and light level, the software part of my system was complete and working, all that was left was to physically build it. I started around the 5th of February. There was a relatively short supply of computer parts when I initially started building, so my first iteration was a messy jumble of badly connecting wires that I used sellotape to keep together. I did not have anything to hold my breadboards and microbits, so I just lay them out on a table in front of me as I worked on it. Sadly, I did not manage to get any photographs of this iteration, as I did not keep it assembled for long, I had it merely to prove that my code worked, and it served its function. Once we got more parts in, I began refining my original iteration into what I have now, and what I photographed in the design section of this report. 
+          </p>
+          
+          <br/>
+          
+          <p>
+            The refinement process was a lot smoother than anything else I had done with the microbits before. I had a good idea of how to approach the task and I also had the parts I required to do so, bar microbits. There was still a shortage of microbits in my class so I was rushing to get my system assembled so that someone else could use it. This rushing more than likely resulted in a few avoidable mistakes I made during the process of assembling my system. Mistakes such as not using the correct pins to connect the microbit to the motorized propellor and not having the microbit wire plugged into the correct port, but once I overcame these minor hitches, I had my final design complete and assembled onto a nice piece of A2 paper for aesthetic purposes, with the explanation for each part I used written onto the paper. 
+          </p>
+          
+          <br/>
+          
+          <p>
+            One problem that I noticed at the end of my project was that the number 2 would show up on my microbit without me wanting it to. I learned that this came from issues with the grounding of my system and that the digital input defaulted to 2 instead of 0. If my system was properly grounded then the number 0 would have been the default number that showed up, which would make a lot more sense than 2. There was nothing I could do to prevent this issue unless I wanted to entirely change my system design and time constraint issues made this option very unfeasible. 
+          </p>
+          <h2>
+            Evaluation: 
+          </h2>
+          <p>
+            put your report here
+          </p>
         </div>
       </div>
     </div>
-    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
+    
   </body>
 </html>
